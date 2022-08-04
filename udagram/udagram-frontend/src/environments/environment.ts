@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  appName: 'Udagram',
-  apiHost: 'http://localhost:8080/api/v0'
+  appName: 'Udagram-api',
+  apiHost: 'http://Udagramapi-env.eba-gxqubpir.us-east-1.elasticbeanstalk.com/api/v0'
 };
 
 /*
@@ -16,3 +16,4 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+// apiHost: 'http://localhost:8080/api/v0'
