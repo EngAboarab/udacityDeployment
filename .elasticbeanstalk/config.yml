@@ -18,3 +18,5 @@ global:
   profile: eb-cli
   sc: git
   workspace_type: Application
+deploy:
+  artifact: www/Archive.zip
