@@ -21,26 +21,32 @@ for the successful deploy and circleCI is [here](https://github.com/EngAboarab/u
 
 - A S3 bucket for hosting uploaded pictures.
  
- A list of dependencies for both back and front end you can find in dependencies.md](https://github.com/EngAboarab/udacityDeployment/tree/master/documentations/dependencies.md).
+
 ```
+ A list of dependencies for both back and front end you can find in dependencies.md](https://github.com/EngAboarab/udacityDeployment/tree/master/documentations/dependencies.md).
 
 ## Infrastructure
 [infrastructure.md](https://github.com/EngAboarab/udacityDeployment/blob/master/documentations/infrastructure.md) 
 
-### Installation
+## Instructions 
+-----
 
-Provision the necessary AWS services needed for running the application:
+### - Installation
+
+
 1. install the nccessary dependencies 
 ```npm run frontend:install
    npm run api:install
 ``` 
 
-2. inside the backend(udagram-api) create your .env file reference to [ENV_Example file]()
+2. inside the backend(udagram-api) create your .env file reference to [ENV_Example file](https://github.com/EngAboarab/udacityDeployment/blob/master/ENV_Example)  
+
 **note** __make sure to let the port value blank__
 
 
 
-### depolyment:
+### - depolyment:
+----
 via AWS Console execute the following:
 1. create the required database via AWS RDS and make sure to make the DB public
 2. update the .env variable accordingly.
@@ -55,17 +61,19 @@ via AWS Console execute the following:
 
 4. set the enviroment properties on EB configration with the (POSTGRES_USERNAME,POSTGRES_PASSWORD,POSTGRES_DB ,PORT,DB_PORT,POSTGRES_HOST)
 
-5. in the front end (udagram-frontend/environments) change the apiHost value to the link of you eb env. 'http://yourlink/api/v0' in both files
+5. in the front end (udagram-frontend/environments) change the apiHost value to the link of you eb env. 'http://yourlink/api/v0' in both files  
+
 **note:** __do not forget /api/v0 portion
+
 6. in AWS S3 create a New Bucket and **make sure make the acls enabled and make it public and enable static website hosting and finally change the bucket policy**
+
 7. in the front end (udagram-frontend/bin/deploy.sh) update the link for your bucket aws s3 cp --recursive --acl public-read ./www s3://__udagramfront/__
 
 8. deploy the front end to aws bucket 
-``` npm run frontend:deploy
-```
+``` npm run frontend:deploy```
 
 
-## CI/CD using CicleCI:
+### CI/CD using CicleCI:
 1. push your project to you github account
 
 2. open your circleCI account
@@ -77,6 +85,7 @@ via AWS Console execute the following:
 
 
 ## Built With
+----
 
 - [Angular](https://angular.io/) - Single Page Application Framework
 - [Node](https://nodejs.org) - Javascript Runtime
