@@ -8,7 +8,10 @@ the link for the working website is [udagram-api](http://udagramfront.s3-website
 ## screenshots :
 for the successful deploy and circleCI is [here](https://github.com/EngAboarab/udacityDeployment/tree/master/screenshots)
 
-### Dependencies
+## Documentation:
+[link](https://github.com/EngAboarab/udacityDeployment/tree/master/documentations)
+
+## Dependencies
 
 ```
 - Node v14.15.1 (LTS) or more recent. While older versions can work it is advisable to keep node to latest LTS version
@@ -23,7 +26,7 @@ for the successful deploy and circleCI is [here](https://github.com/EngAboarab/u
  
 
 ```
- A list of dependencies for both back and front end you can find in dependencies.md](https://github.com/EngAboarab/udacityDeployment/tree/master/documentations/dependencies.md).
+ A list of dependencies for both back and front end you can find in [dependencies.md](https://github.com/EngAboarab/udacityDeployment/tree/master/documentations/dependencies.md).
 
 ## Infrastructure
 [infrastructure.md](https://github.com/EngAboarab/udacityDeployment/blob/master/documentations/infrastructure.md) 
@@ -81,6 +84,7 @@ via AWS Console execute the following:
 4. in the project setting/Enviromental Variables  add AWS_ACCESS_KEY_ID AWS_DEFAULT_REGION AWS_SECRET_ACCESS_KEY
 5. rebuild your project
 
+you can find the pipeline documentation [here](https://github.com/EngAboarab/udacityDeployment/blob/master/documentations/pipeline.md)
 
 
 
