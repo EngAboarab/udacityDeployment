@@ -44,7 +44,7 @@ for the successful deploy and circleCI is [here](https://github.com/EngAboarab/u
 
 2. inside the backend(udagram-api) create your .env file reference to [ENV_Example file](https://github.com/EngAboarab/udacityDeployment/blob/master/ENV_Example)  
 
-**note** __make sure to let the port value blank__
+**note** _make sure to let the port value blank_
 
 
 
@@ -66,7 +66,7 @@ via AWS Console execute the following:
 
 5. in the front end (udagram-frontend/environments) change the apiHost value to the link of you eb env. 'http://yourlink/api/v0' in both files  
 
-**note:** __do not forget /api/v0 portion
+**note:** _do not forget /api/v0 portion_
 
 6. in AWS S3 create a New Bucket and **make sure make the acls enabled and make it public and enable static website hosting and finally change the bucket policy**
 
@@ -81,12 +81,18 @@ via AWS Console execute the following:
 
 2. open your circleCI account
 3. add a new project /select you repo
-4. in the project setting/Enviromental Variables  add AWS_ACCESS_KEY_ID AWS_DEFAULT_REGION AWS_SECRET_ACCESS_KEY
-5. rebuild your project
+4. in the project setting/Enviromental Variables  add AWS_ACCESS_KEY_ID AWS_DEFAULT_REGION AWS_SECRET_ACCESS_KEY,PORT,DB_PORT,POSTGRES_DB,POSTGRES_HOST,POSTGRES_USERNAME&POSTGRES_PASSWORD
+5. rebuild your project  
+6. add circle status badge to README.md by:
+![<ORG_NAME>](https://circleci.com/<VCS>/<ORG_NAME>/<PROJECT_NAME>.svg?style=svg)](<LINK>)
+
+**Note**:_you have to make the profile in the .elasticbeanstalk/config.yaml equal to null_ 
+
 
 you can find the pipeline documentation [here](https://github.com/EngAboarab/udacityDeployment/blob/master/documentations/pipeline.md)
 
-
+## status budge
+![circlCI](https://circleci.com/gh/Aboarab/deployment-project.svg?style=svg)](https://github.com/EngAboarab/udacityDeployment/blob/master/documentations/pipeline.md)
 
 ## Built With
 ----
