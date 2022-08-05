@@ -70,8 +70,10 @@ workflows:
       - build:
           filters:
             branches:
-              only: - master
+              only: 
+                master
       - deploy
           filters:
             branches:
-              only: - master
+              only: 
+                 master
