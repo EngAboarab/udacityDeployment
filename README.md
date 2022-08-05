@@ -3,8 +3,10 @@
 
  This project  is a deploying of full-stack website on AWS witht the using of CircleCI as CI/CD tool. The udagram application is a fairly simple application that includes all the major components of a Full-Stack web application and was built over a provided starter project which you could find via [starter project link](https://github.com/udacity/nd0067-c4-deployment-process-project-starter).
 
-the link for the working website is [udagram-api](http://udagramfront.s3-website-us-east-1.amazonaws.com/home)
+the link for the working website is [udagram-api](http://udagramfront.s3-website-us-east-1.amazonaws.com)
 
+## screenshots :
+for the successful deploy and circleCI is [here](https://github.com/EngAboarab/udacityDeployment/tree/master/screenshots)
 
 ### Dependencies
 

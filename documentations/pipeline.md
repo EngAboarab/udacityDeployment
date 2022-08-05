@@ -19,3 +19,4 @@ I have use CircleCi as the CI/CD tool
 
 
 ## Diagram
+[link](https://github.com/EngAboarab/udacityDeployment/blob/master/diagrams/pipeline.png)
